@@ -1,0 +1,25 @@
+<div class="container-full mb-2 mt-0">
+  <div class="hero">
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="row" data-masonry='{"percentPosition": true }'>
+
+    <div class="col-sm-4 col-lg-3 col-6 mb-2" *ngFor="let wine of wineList">
+      <div class="card wine-card">
+        <img class="card-image card-img-top" src="http://127.0.0.1:8000{{ wine.image }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ wine.name }}</h5>
+
+          <a class="btn btn-secondary btn-sm" style="margin-right: 1.8px">Details</a>
+          <a class="btn btn-primary btn-sm">Add To Cart</a>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
